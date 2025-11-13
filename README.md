@@ -25,7 +25,7 @@ A lightweight Java password generator that creates secure, memorable passwords i
 |----------|-------|
 | Character set | Lowercase a-z (26 chars) |
 | Groups | 3 or 4 (random) |
-| Characters per group | 3-4 (4 groups) or 4-6 (3 groups) |
+| Characters per group | 3-4 (4 groups) or 4-6 (3 groups) (random) |
 | Total length | 15-20 characters (including hyphens) |
 | Character count | 13-18 letters (random) |
 | Entropy | 68-90 bits |
