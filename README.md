@@ -49,7 +49,7 @@ The hyphen-separated format sacrifices ~10 bits of potential entropy for signifi
 
 ## Usage
 
-### Standalone
+### In a Project
 
 Add the JAR to your classpath (e.g., `~/java-x86_64_sdk/jre/lib/ext/`):
 ```java
@@ -61,7 +61,7 @@ System.out.println(password); // abc-defg-hijk-lmn
 ...
 ```
 
-### Download Pre-compiled JAR
+### Standalone
 
 Download the latest `simple-password-generator.jar` from [Releases](https://github.com/dutty5/simple-password-generator/releases).
 
