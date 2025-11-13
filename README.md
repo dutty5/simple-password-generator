@@ -44,8 +44,8 @@ The hyphen-separated format sacrifices ~10 bits of potential entropy for signifi
 - Application-specific passwords for OAuth 2.0 environments
 - IMAP/SMTP, Wi-Fi, VPN authentication credentials
 - API access tokens in human-readable format
-- Temporary access codes
-- Service account passwords
+- Temporary access codes/passwords
+- Server/app generated passwords
 
 ## Usage
 
