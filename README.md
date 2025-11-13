@@ -13,6 +13,8 @@ A lightweight Java password generator that creates secure, memorable passwords i
 - **Cryptographically secure**: Uses Java's `SecureRandom` for true randomness
 - **Human-readable**: Hyphen-separated lowercase letters (easy to type and communicate)
 - **Strong security**: 68-90 bits of entropy, exceeding NIST recommendations (64+ bits)
+- **No predictable patterns**: Truly random character selection
+- **Uniform distribution**: All characters equally likely
 - **Flexible format**: 3-4 groups with 3-6 characters each
 - **Consistent length**: 15-20 total characters including hyphens
 - **Generation time**: sub-millisecond per password
