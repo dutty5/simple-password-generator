@@ -10,6 +10,7 @@ A lightweight Java password generator that creates secure, memorable passwords i
 
 ## Features
 
+- **Point and shoot**: No parameters, no mistakes, no weak passwords
 - **Cryptographically secure**: Uses Java's `SecureRandom` for true randomness
 - **Human-readable**: Hyphen-separated lowercase letters (easy to type and communicate)
 - **Strong security**: 68-90 bits of entropy, exceeding NIST recommendations (64+ bits)
