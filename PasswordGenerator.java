@@ -12,7 +12,7 @@ public class PasswordGenerator {
     /**
      * Generates a random application password with groups separated by hyphens
      * Format: xxxx-yyyy-zzzz or xxx-yyy-zzz-www with random number of groups
-     * and random number of charecters in a group
+     * and random number of characters in a group
      * @return Generated password string
      */
     public static String generatePassword() {
