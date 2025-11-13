@@ -15,6 +15,7 @@ A lightweight Java password generator that creates secure, memorable passwords i
 - **Strong security**: 68-90 bits of entropy, exceeding NIST recommendations (64+ bits)
 - **Flexible format**: 3-4 groups with 3-6 characters each
 - **Consistent length**: 15-20 total characters including hyphens
+- **Generation time**: sub-millisecond per password
 
 ## Technical Specifications
 
