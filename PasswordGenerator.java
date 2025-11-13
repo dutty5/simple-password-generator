@@ -11,8 +11,8 @@ public class PasswordGenerator {
     
     /**
      * Generates a random application password with groups separated by hyphens
-     * Format: xxxx-yyyy-zzzz or xxx-yyy-zzz-www with random number of groups
-     * and random number of characters in a group
+     * Format: xxxx-yyyy-zzzz or xxx-yyy-zzz-www
+     * 
      * @return Generated password string
      */
     public static String generatePassword() {
@@ -43,7 +43,7 @@ public class PasswordGenerator {
         // Remove trailing hyphen
         randomString.setLength(randomString.length() - 1);
         
-        // Check if we need to add one more character for shortest lengths
+        // Check if we need to add one more character for specific lengths
         int currentLength = randomString.length();
         if ((currentLength == 14 && ng == 3) || (currentLength == 15 && ng == 4)) {
             // Split by hyphen to get groups
@@ -67,5 +67,32 @@ public class PasswordGenerator {
         }
         
         return randomString.toString();
+    }
+    
+    /**
+     * Main method for command-line usage
+     */
+    public static void main(String[] args) {
+        int count = 1;
+        
+        // Check if user specified number of passwords to generate
+        if (args.length > 0) {
+            try {
+                count = Integer.parseInt(args[0]);
+                if (count < 1 || count > 100) {
+                    System.err.println("Count must be between 1 and 100");
+                    System.exit(1);
+                }
+            } catch (NumberFormatException e) {
+                System.err.println("Invalid number: " + args[0]);
+                System.err.println("Usage: java PasswordGenerator [count]");
+                System.exit(1);
+            }
+        }
+        
+        // Generate and print password(s)
+        for (int i = 0; i < count; i++) {
+            System.out.println(generatePassword());
+        }
     }
 }
