@@ -75,6 +75,14 @@ java -jar simple-password-generator.jar 5
 java -cp simple-password-generator.jar PasswordGenerator 5
 ```
 
+### Example Output
+```bash
+[user@MacBook ~]% java -jar simple-password-generator.jar 3
+cfso-jiu-qui-bvgc
+vlb-sks-zyac-ljw
+bsged-yabjf-ofxkpp
+```
+
 ## Building from Source
 
 ```bash
