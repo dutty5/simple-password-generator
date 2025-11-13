@@ -36,14 +36,6 @@ A lightweight Java password generator that creates secure, memorable passwords i
 
 The hyphen-separated format sacrifices ~10 bits of potential entropy for significant usability benefits while maintaining excellent security for application passwords.
 
-## Usage
-
-### Standalone
-```java
-String password = PasswordGenerator.generatePassword();
-System.out.println(password); // abc-defg-hijk-lmn
-```
-
 ## Use Cases
 
 - Application-specific passwords for OAuth 2.0 environments
@@ -51,6 +43,36 @@ System.out.println(password); // abc-defg-hijk-lmn
 - API access tokens in human-readable format
 - Temporary access codes
 - Service account passwords
+
+## Usage
+
+### Standalone
+
+Add the JAR to your classpath (e.g., `~/java-x86_64_sdk/jre/lib/ext/`):
+```java
+import PasswordGenerator;
+
+...
+String password = PasswordGenerator.generatePassword();
+System.out.println(password); // abc-defg-hijk-lmn
+...
+```
+
+### Download Pre-compiled JAR
+
+Download the latest `simple-password-generator.jar` from [Releases](https://github.com/dutty5/simple-password-generator/releases).
+
+### Command Line
+```bash
+# Generate a single password (using -jar)
+java -jar simple-password-generator.jar
+
+# Generate 5 passwords
+java -jar simple-password-generator.jar 5
+
+# Alternative: using -cp
+java -cp simple-password-generator.jar PasswordGenerator 5
+```
 
 ## Building from Source
 
