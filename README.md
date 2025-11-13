@@ -52,6 +52,21 @@ System.out.println(password); // abc-defg-hijk-lmn
 - Temporary access codes
 - Service account passwords
 
+## Building from Source
+
+```bash
+# Clone the repository
+git clone https://github.com/dutty5/simple-password-generator.git
+cd simple-password-generator
+
+# Build manually
+javac PasswordGenerator.java
+jar cfe simple-password-generator.jar PasswordGenerator PasswordGenerator.class
+
+# Test
+java -jar simple-password-generator.jar
+```  
+
 ## License
 
 MIT License - see LICENSE file for details
